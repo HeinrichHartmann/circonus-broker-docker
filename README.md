@@ -7,9 +7,12 @@ https://login.circonus.com/resources/docs/user/Administration/Brokers.html#Insta
 ## Usage
 
 ```
-# create a circonus broker container image from scratch
+# create a broker container image from scratch
 make create
 
-# start a circonus broker container
-docker run circonus-broker
+# configure broker
+vi conf.inc
+
+# start a broker container
+make run
 ```
