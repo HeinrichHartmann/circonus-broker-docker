@@ -1,6 +1,8 @@
-source conf.inc
+source /circ/conf.inc
 
-sudo /opt/napp/bin/provtool config set api-url ${API}
-sudo /opt/napp/bin/provtool config set api-token ${TOKEN}
-sudo /opt/napp/bin/provtool provision ${PROVISION_ARGS}
-sudo /opt/noit/prod/sbin/noitd -D ${NOIT_ARGS}
+env | grep CIRC
+
+sudo /opt/napp/bin/provtool config set api-url ${CIRC_API}
+sudo /opt/napp/bin/provtool config set api-token ${CIRC_TOKEN}
+sudo /opt/napp/bin/provtool provision ${CIRC_PROVISION_ARGS}
+sudo /opt/noit/prod/sbin/noitd -D ${CIRC_NOIT_ARGS}
