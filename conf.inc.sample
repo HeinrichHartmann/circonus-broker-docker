@@ -1,4 +1,4 @@
-export CIRC_API="https://api.circonus.com"
-export CIRC_TOKEN=""
-export CIRC_PROVISION_ARGS="-nat -name docker-$(hostname)"
-export CIRC_NOIT_ARGS=""
+export CIRC_API="https://api.circonus.com"                 # change for inside installations
+export CIRC_TOKEN=""                                       # USER AUTH TOKEN from https://login.circonus.com/user/tokens
+export CIRC_PROVISION_ARGS="-nat -name docker-$(hostname)" # passed to provtool
+export CIRC_NOIT_ARGS=""                                   # passed to noitd
