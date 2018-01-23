@@ -11,7 +11,7 @@ https://login.circonus.com/resources/docs/user/Administration/Brokers.html#Insta
 make create
 
 # configure broker
-vi conf.inc
+cp conf.inc.sample conf.inc && emacs conf.inc
 
 # start a broker container
 make run
