@@ -1,3 +1,5 @@
+set -xe
+
 source /circ/conf.inc
 
 env | grep CIRC
